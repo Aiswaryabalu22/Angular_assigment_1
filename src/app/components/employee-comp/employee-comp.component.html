@@ -1,0 +1,21 @@
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <td>ID</td>
+            <td>Name</td>
+            <td>Designation</td>
+            <td>DOJ</td>
+            <td>Salary</td>
+        </tr>
+    </thead>
+    
+    <tbody *ngFor="let emp of employees">
+        <tr>
+            <td>{{emp.eid}}</td>
+            <td>{{emp.ename}}</td>
+            <td>{{emp.desig}}</td>
+            <td>{{emp.joindate | date:shortdate}}</td>
+            <td>{{emp.salary}}</td>
+        </tr>
+    </tbody>
+</table>
